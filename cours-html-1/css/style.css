@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
+
+html{
+	background: url(../image/Mos_Eisley.png)no-repeat fixed center center / cover;
+}
+body{
+	font: 16px 'Comfortaa',sans-serif;
+	margin: 0;
+}
+h1,
+h2,
+h3,
+ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	font-weight: 400;
+}
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*thème*/
+header,main h2{
+	background: #212121;
+	line-height: 60px;
+
+}
+header h1, main h2{
+	text-align: center;
+	color: #fafafa;
+	
+}
+main{
+	width: 800px;
+	margin:10px auto;
+	
+	background: #fff;
+	box-shadow: 0 0 15px #222;
+
+}
+
+main ul{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding:1px 0 0 1px;
+}
+main li img{
+	display: block;
+	width: 100%;
+}
+main li{
+	flex-basis: calc(100% / 3 - 1px);
+	text-align: center;
+	margin:0 1px 1px 0;
+}
+main li:last-child{
+	flex-basis:100%;
+	
+}
+
+
+@media screen and (max-width: 1024px){
+	main{
+		width: auto;
+	}
+}
